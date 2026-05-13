@@ -72,7 +72,7 @@ function App() {
             <h3>Astrix AI Assistant</h3>
             <p><span className="status-dot"></span> Online</p>
           </div>
-          <div className="credits-tag"> Made By Abdul Wasay</div>
+          <div className="credits-tag"> Made By Abdul Wasay & Taha Adnan</div>
         </header>
 
         <section className="messages-container">
