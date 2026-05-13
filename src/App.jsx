@@ -29,7 +29,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/chat", { message: trimmed });
+      const res = await axios.post("https://chatbot-backend-beta-vert.vercel.app/chat", { message: trimmed });
       const aiMsg = {
         sender: "Astrix AI",
         text: res.data?.reply || "I’m sorry, I couldn’t generate a response.",
