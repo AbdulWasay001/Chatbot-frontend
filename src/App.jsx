@@ -79,7 +79,15 @@ function App() {
           {chat.map((msg, index) => (
             <div key={index} className={`message-wrapper ${msg.type}`}>
               <div className="avatar">
-                {msg.type === "user" ? "U" : "A"}
+                {msg.type === "user" ? (
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                  </svg>
+                ) : (
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M20 9V7l-2-2H6L4 7v2H2v10h2v-4h2v4h12v-4h2v4h2V9h-2zM6 9h12v2H6V9zm0 4h12v2H6v-2z"/>
+                  </svg>
+                )}
               </div>
               <div className="message-content">
                 <div className="sender-name">{msg.sender}</div>
