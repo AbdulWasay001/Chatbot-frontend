@@ -59,7 +59,7 @@ function App() {
     <div className="app-container">
       {/* Sidebar (Optional decoration) */}
       <aside className="sidebar">
-        <div className="logo">Astrix <span>AI</span></div>
+        <div className="logo">Xirsa <span>AI</span></div>
         <button className="new-chat-btn">+ New Chat</button>
         <div className="history-label">Recent Chats</div>
         <div className="history-item">Code Review...</div>
@@ -69,10 +69,10 @@ function App() {
       <main className="main-chat">
         <header className="chat-header">
           <div className="header-info">
-            <h3>Astrix AI Assistant</h3>
+            <h3>Xirsa AI Assistant</h3>
             <p><span className="status-dot"></span> Online</p>
           </div>
-          <div className="credits-tag"> Made By Abdul Wasay & Taha Adnan</div>
+          <div className="credits-tag"> Made By Abdul Wasay </div>
         </header>
 
         <section className="messages-container">

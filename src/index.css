@@ -40,11 +40,11 @@ button, textarea {
 }
 
 .sidebar {
-  width: 280px;
-  min-width: 280px;
+  width: clamp(240px, 20vw, 320px);
+  min-width: clamp(240px, 20vw, 320px);
   background: linear-gradient(180deg, rgba(4, 11, 27, 0.96), rgba(10, 16, 35, 0.95));
   border-right: 1px solid var(--border-soft);
-  padding: 32px 26px;
+  padding: clamp(20px, 3vw, 36px) clamp(18px, 2.5vw, 30px);
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -118,7 +118,7 @@ button, textarea {
   justify-content: space-between;
   align-items: center;
   gap: 18px;
-  padding: 22px 32px;
+  padding: clamp(16px, 2vw, 28px) clamp(20px, 3vw, 40px);
   margin-bottom: 20px;
   background: rgba(15, 23, 42, 0.75);
   border-radius: 28px;
@@ -129,7 +129,7 @@ button, textarea {
 
 .header-info h3 {
   margin: 0;
-  font-size: 1.45rem;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
   letter-spacing: 0.01em;
 }
 
@@ -169,8 +169,8 @@ button, textarea {
 }
 
 .avatar {
-  width: 42px;
-  height: 42px;
+  width: clamp(36px, 4vw, 52px);
+  height: clamp(36px, 4vw, 52px);
   border-radius: 50%;
   background: radial-gradient(circle at top left, var(--accent-cyan), var(--accent-purple));
   color: white;
@@ -299,8 +299,8 @@ button, textarea {
   margin-left: 14px;
   display: grid;
   place-items: center;
-  width: 54px;
-  height: 54px;
+  width: clamp(46px, 5vw, 64px);
+  height: clamp(46px, 5vw, 64px);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
